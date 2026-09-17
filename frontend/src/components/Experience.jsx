@@ -80,22 +80,22 @@ function Experience() {
 
               {/* CONTENT */}
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-white">
-                  Software Engineer Intern — webMatrix INC
+                <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">
+                  Software Engineer Intern — WebMatrix INC
                 </h3>
 
-                <p className="text-sm text-slate-400">
+                <p className="text-sm text-slate-600 dark:text-slate-400">
                   Chicago, Illinois, United States | Jun 2026 – September 2026
                 </p>
 
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
                   Software Engineer Intern working on the SeniorCarePro.ai
                   healthcare platform, with a primary focus on developing and
                   improving the interview module to provide a more realistic,
                   reliable, and secure interview experience.
                 </p>
 
-                <ul className="list-disc list-inside text-slate-300 space-y-2">
+                <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-2">
                   <li>
                     Redesigned core interview-module workflows on
                     SeniorCarePro.ai, delivering a more realistic and reliable
@@ -163,29 +163,45 @@ function Experience() {
 
               {/* CONTENT */}
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-white">
+                <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">
                   Backend Developer (Intern) — WoRisGo
                 </h3>
 
-                <p className="text-sm text-slate-400">
+                <p className="text-sm text-slate-600 dark:text-slate-400">
                   July 2025 – September 2025
                 </p>
 
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
                   Backend Developer at WoRisGo with experience in building
                   scalable APIs and backend services using MongoDB, PHP, and
                   the MERN stack.
                 </p>
 
-                <ul className="list-disc list-inside text-slate-300 space-y-1">
-                  <li>Enabled reliable support for booking and analytics workflows across multiple frontend services by architecting RESTful
-backend APIs in Node.js and PHP</li>
-                  <li>Cut query execution time by approximately 30%, verified through direct before/after benchmarking, by optimizing
-MySQL database schemas and indexing strategy</li>
-                  <li>Eliminated contract-breaking integration issues between frontend and backend teams by defining, documenting, and
-validating REST API contracts (GET/POST) using Postman, in close collaboration with frontend engineers</li>
-                  <li>Delivered a fully functioning internal Booking Management System into production use by owning schema design,
-CRUD operations, and core business logic end-to-end.</li>
+                <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-1">
+                  <li>
+                    Enabled reliable support for booking and analytics workflows
+                    across multiple frontend services by architecting RESTful
+                    backend APIs in Node.js and PHP
+                  </li>
+
+                  <li>
+                    Cut query execution time by approximately 30%, verified
+                    through direct before/after benchmarking, by optimizing
+                    MySQL database schemas and indexing strategy
+                  </li>
+
+                  <li>
+                    Eliminated contract-breaking integration issues between
+                    frontend and backend teams by defining, documenting, and
+                    validating REST API contracts (GET/POST) using Postman, in
+                    close collaboration with frontend engineers
+                  </li>
+
+                  <li>
+                    Delivered a fully functioning internal Booking Management
+                    System into production use by owning schema design, CRUD
+                    operations, and core business logic end-to-end.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -219,27 +235,41 @@ CRUD operations, and core business logic end-to-end.</li>
 
               {/* CONTENT */}
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold text-white">
+                <h3 className="text-2xl font-semibold text-slate-900 dark:text-white">
                   Frontend Developer (Intern) — TCTG Pvt Ltd
                 </h3>
 
-                <p className="text-sm text-slate-400">
+                <p className="text-sm text-slate-600 dark:text-slate-400">
                   Vadodara, Gujarat | May 2024 – July 2024
                 </p>
 
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
                   Frontend Developer Intern focused on building responsive,
                   user-friendly interfaces using modern frontend technologies.
                 </p>
 
-                <ul className="list-disc list-inside text-slate-300 space-y-1">
-                  <li>Delivered a consistent user experience across device breakpoints by building and maintaining responsive frontend
-modules in React.js, HTML, CSS, and JavaScript</li>
-                  <li>Removed the need for full-page reloads on content updates by integrating dynamic backend functionality via PHP and
-AJAX</li>
-                  <li>Enabled secure, end-to-end login and checkout flows by implementing authentication and connecting frontend
-components to backend APIs</li>
-                  <li>Improved page responsiveness across devices by auditing and optimizing frontend performance</li>
+                <ul className="list-disc list-inside text-slate-700 dark:text-slate-300 space-y-1">
+                  <li>
+                    Delivered a consistent user experience across device
+                    breakpoints by building and maintaining responsive frontend
+                    modules in React.js, HTML, CSS, and JavaScript
+                  </li>
+
+                  <li>
+                    Removed the need for full-page reloads on content updates by
+                    integrating dynamic backend functionality via PHP and AJAX
+                  </li>
+
+                  <li>
+                    Enabled secure, end-to-end login and checkout flows by
+                    implementing authentication and connecting frontend
+                    components to backend APIs
+                  </li>
+
+                  <li>
+                    Improved page responsiveness across devices by auditing and
+                    optimizing frontend performance
+                  </li>
                 </ul>
               </div>
             </div>

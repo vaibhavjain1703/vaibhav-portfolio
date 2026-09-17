@@ -10,7 +10,9 @@ function Education() {
       ([e]) => setShow(e.isIntersecting),
       { threshold: 0.2 }
     );
+
     if (ref.current) obs.observe(ref.current);
+
     return () => obs.disconnect();
   }, []);
 
@@ -25,7 +27,7 @@ function Education() {
           show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"
         }`}
       >
-        {/* ===== TITLE (SAME AS EXPERIENCE) ===== */}
+        {/* ===== TITLE ===== */}
         <h2 className="text-center mb-24 relative z-20">
           <span
             className="
@@ -48,116 +50,173 @@ function Education() {
         {/* ===== TIMELINE ===== */}
         <div className="relative border-l-2 border-cyan-500/30 pl-12 space-y-20">
 
-          {/* ===== BTECH ===== */}
+          {/* ================= BTECH ================= */}
           <div className="relative">
             <span className="absolute -left-[18px] top-10 w-9 h-9 rounded-full bg-cyan-500 text-white flex items-center justify-center">
               <FaGraduationCap size={16} />
             </span>
 
-            <div className="
-              bg-white dark:bg-slate-900
-              rounded-2xl p-8
-              border border-slate-200 dark:border-slate-800
-              shadow-md hover:shadow-xl
-              transition
-            ">
-              <h3 className="text-2xl font-semibold text-white mb-2">
-                Bachelor of Technology (B.Tech)
-              </h3>
+            <div
+              className="
+                grid grid-cols-[80px_1fr]
+                gap-8
+                bg-white dark:bg-slate-900
+                rounded-2xl p-8
+                border border-slate-200 dark:border-slate-800
+                shadow-md hover:shadow-xl
+                transition
+              "
+            >
+              {/* LOGO */}
+              <div className="w-[80px] h-[80px] bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center">
+                <img
+                  src="/logos/ju.png"
+                  alt="Jain (Deemed-to-be) University"
+                  className="max-w-[60px] max-h-[60px] object-contain"
+                />
+              </div>
 
-              <p className="text-slate-300">
-                Computer Science & Engineering
-              </p>
+              {/* CONTENT */}
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-2">
+                  Bachelor of Technology (B.Tech)
+                </h3>
 
-              <p className="text-slate-400 mb-2">
-                Specialization: Software Engineering
-              </p>
+                <p className="text-slate-700 dark:text-slate-300">
+                  Computer Science & Engineering
+                </p>
 
-              <p className="text-cyan-400 font-medium">
-                Jain (Deemed-to-be) University
-              </p>
+                <p className="text-slate-600 dark:text-slate-400">
+                  Specialization: Software Engineering
+                </p>
 
-              <p className="text-slate-400">
-                Bengaluru, Karnataka
-              </p>
+                <p className="text-cyan-500 dark:text-cyan-400 font-medium">
+                  Jain (Deemed-to-be) University
+                </p>
 
-              <p className="mt-3 text-sm text-slate-500">
-                2022 – 2026 
-              </p>
+                <p className="text-slate-600 dark:text-slate-400">
+                  Bengaluru, Karnataka
+                </p>
 
-              <p className="mt-2 font-medium text-slate-300">
-                CGPA: <span className="text-cyan-400">7.52</span>
-              </p>
+                <p className="mt-3 text-sm text-slate-600 dark:text-slate-500">
+                  2022 – 2026
+                </p>
+
+                <p className="mt-2 font-medium text-slate-700 dark:text-slate-300">
+                  CGPA:{" "}
+                  <span className="text-cyan-500 dark:text-cyan-400">
+                    7.52
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* ===== CLASS XII ===== */}
+          {/* ================= CLASS XII ================= */}
           <div className="relative">
             <span className="absolute -left-[18px] top-10 w-9 h-9 rounded-full bg-indigo-500 text-white flex items-center justify-center">
               <FaGraduationCap size={16} />
             </span>
 
-            <div className="
-              bg-white dark:bg-slate-900
-              rounded-2xl p-8
-              border border-slate-200 dark:border-slate-800
-              shadow-md hover:shadow-xl
-              transition
-            ">
-              <h3 className="text-2xl font-semibold text-white mb-2">
-                Class XII (PUC)
-              </h3>
+            <div
+              className="
+                grid grid-cols-[80px_1fr]
+                gap-8
+                bg-white dark:bg-slate-900
+                rounded-2xl p-8
+                border border-slate-200 dark:border-slate-800
+                shadow-md hover:shadow-xl
+                transition
+              "
+            >
+              {/* LOGO */}
+              <div className="w-[80px] h-[80px] bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center">
+                <img
+                  src="/logos/bkgpucollege.png"
+                  alt="BKG PU College"
+                  className="max-w-[60px] max-h-[60px] object-contain"
+                />
+              </div>
 
-              <p className="text-cyan-400 font-medium">
-                BKG PU College
-              </p>
+              {/* CONTENT */}
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-2">
+                  Class XII (PUC)
+                </h3>
 
-              <p className="text-slate-400">
-                Sandur, Karnataka
-              </p>
+                <p className="text-cyan-500 dark:text-cyan-400 font-medium">
+                  BKG PU College
+                </p>
 
-              <p className="mt-3 text-sm text-slate-500">
-                2020 – 2022
-              </p>
+                <p className="text-slate-600 dark:text-slate-400">
+                  Sandur, Karnataka
+                </p>
 
-              <p className="mt-2 font-medium text-slate-300">
-                Percentage: <span className="text-cyan-400">89%</span>
-              </p>
+                <p className="mt-3 text-sm text-slate-600 dark:text-slate-500">
+                  2020 – 2022
+                </p>
+
+                <p className="mt-2 font-medium text-slate-700 dark:text-slate-300">
+                  Percentage:{" "}
+                  <span className="text-cyan-500 dark:text-cyan-400">
+                    89%
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* ===== CLASS X ===== */}
+          {/* ================= CLASS X ================= */}
           <div className="relative">
             <span className="absolute -left-[18px] top-10 w-9 h-9 rounded-full bg-indigo-500 text-white flex items-center justify-center">
               <FaGraduationCap size={16} />
             </span>
 
-            <div className="
-              bg-white dark:bg-slate-900
-              rounded-2xl p-8
-              border border-slate-200 dark:border-slate-800
-              shadow-md hover:shadow-xl
-              transition
-            ">
-              <h3 className="text-2xl font-semibold text-white mb-2">
-                Class X (SSLC)
-              </h3>
+            <div
+              className="
+                grid grid-cols-[80px_1fr]
+                gap-8
+                bg-white dark:bg-slate-900
+                rounded-2xl p-8
+                border border-slate-200 dark:border-slate-800
+                shadow-md hover:shadow-xl
+                transition
+              "
+            >
+              {/* LOGO */}
+              <div className="w-[80px] h-[80px] bg-slate-100 dark:bg-slate-800 rounded-xl flex items-center justify-center">
+                <img
+                  src="/logos/surabhividyaniketan.jpg"
+                  alt="Surabhi Vidyaniketan"
+                  className="max-w-[60px] max-h-[60px] object-contain"
+                />
+              </div>
 
-              <p className="text-cyan-400 font-medium">
-                Surabhi Vidyaniketan
-              </p>
+              {/* CONTENT */}
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-slate-900 dark:text-white mb-2">
+                  Class X (SSLC)
+                </h3>
 
-              <p className="text-slate-400">
-                Hospet, Karnataka
-              </p>
+                <p className="text-cyan-500 dark:text-cyan-400 font-medium">
+                  Surabhi Vidyaniketan
+                </p>
 
-              <p className="mt-3 text-sm text-slate-500">
-                2015 – 2020
-              </p>
+                <p className="text-slate-600 dark:text-slate-400">
+                  Hospet, Karnataka
+                </p>
 
-              <p className="mt-2 font-medium text-slate-300">
-                Percentage: <span className="text-cyan-400">73%</span>
-              </p>
+                <p className="mt-3 text-sm text-slate-600 dark:text-slate-500">
+                  2015 – 2020
+                </p>
+
+                <p className="mt-2 font-medium text-slate-700 dark:text-slate-300">
+                  Percentage:{" "}
+                  <span className="text-cyan-500 dark:text-cyan-400">
+                    73%
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
 
