@@ -89,7 +89,7 @@ function Hero() {
           <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
             {[
               { label: "Projects", value: "5+" },
-              { label: "Experience", value: "2 Internships" },
+              { label: "Experience", value: "3 Internships" },
               { label: "Skills", value: "7+" },
             ].map((stat) => (
               <div

@@ -82,7 +82,11 @@ function Education() {
               </p>
 
               <p className="mt-3 text-sm text-slate-500">
-                2022 – 2026 (Expected)
+                2022 – 2026 
+              </p>
+
+              <p className="mt-2 font-medium text-slate-300">
+                CGPA: <span className="text-cyan-400">7.52</span>
               </p>
             </div>
           </div>
